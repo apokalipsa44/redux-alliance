@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import store from "./store";
 import { Provider } from "react-redux";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuOpen = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <Provider store={store}>
-      <div>
-        <h1>apokalipsa44</h1>
-      </div>
-    </Provider>
+    <div>
+      <button onClick={handleMenuOpen} className="button">
+        Open menu
+      </button>
+      {isMenuOpen ? (
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+      ) : null}
+    </div>
   );
 }
 

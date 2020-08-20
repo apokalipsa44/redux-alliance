@@ -24,6 +24,44 @@
   color: white;
 }
 
+.button {
+  margin:20px 20px 5px 20px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background: #30f037;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  border-radius: 0%;
+}
+
+.button:after{
+ background: #a8fbab;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  border-radius: 0%;
+}
+
+li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid;
+  padding: 10px;
+  width:120px;
+  margin: 4px;
+}
+
 .App-link {
   color: #61dafb;
 }
