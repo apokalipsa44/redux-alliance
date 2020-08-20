@@ -1,5 +1,5 @@
-##### npm create-react-app npm
-##### install redux react-redux 
+##### npm create-react-app
+##### npm install redux react-redux 
 
 # Most simple demo
 
@@ -23,8 +23,7 @@ const counter = (state = 0, action) => { switch (action.type) {
     case "DECREMENT":
         return state - 1; 
     default: 
-        return state; } 
-    
+        return state; }  
 };
 
 //store here
